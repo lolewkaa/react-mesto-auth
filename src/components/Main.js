@@ -8,20 +8,6 @@ import {CurrentUserContext} from '../contexts/CurrentUserContext'
 
 export default function Main({onEditProfile, onAddPlace, onEditAvatar, onCardClick, onCardLike,  onCardDelete, cards}) {
     const currentUser = useContext(CurrentUserContext)
-    // const [userName, setUserName] = React.useState('')
-    // const [userDescription, setUserDescription] = React.useState('')
-    // const [userAvatar, setUserAvatar] = React.useState('')
-    //const [cards, setCards] = React.useState([])
-  //   React.useEffect(() => {
-  //     Promise.all([api.getUserInfo(), api.getInitialCards()])
-  // .then(([dataUser, resCard]) => {
-  //  setUserName(dataUser.name)
-  //  setUserDescription(dataUser.about)
-  //  setUserAvatar(dataUser.avatar)
-  //  setCards(resCard)
-  // }, )
-  // .catch((error) => console.log(`Ошибка: ${error}`));
-  //   },[])
 return(
     <main>
         <section className="profile">
@@ -47,10 +33,6 @@ return(
         <ul className="cards">{cards.map((card) => ( 
             <Card card={card} key={card._id}  onCardClick={onCardClick} onCardLike={onCardLike} onCardDelete={onCardDelete}/>
           ))}</ul>
-        
-          <template id="places">
-          
-        </template>
        
       </main>
 )

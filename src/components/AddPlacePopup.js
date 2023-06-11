@@ -39,6 +39,7 @@ export default function AddPlacePopup({isOpen, onClose, onAddPlace}) {
        minLength="2" 
        maxLength="30" 
        placeholder="Описание" 
+       value={cardName ?? ''}
        required 
        onChange={(e) => setCardName(e.target.value)}
        />
@@ -49,6 +50,7 @@ export default function AddPlacePopup({isOpen, onClose, onAddPlace}) {
             className="form__item form__item_type_link" 
             name="link" 
             placeholder="Введите ссылку на изображение" 
+            value={cardLink ?? ''}
             required 
             onChange={(e) => setCardLink(e.target.value)}
             />

@@ -12,10 +12,10 @@ export default function InfoTooltip({ toolTipImage, title, isOpen, onClose}) {
           </button>
           <div >
             {toolTipImage === 'success' &&(
-               <img className="popup__image-auth" src={succesIcon} />
+               <img className="popup__image-auth" src={succesIcon} alt="Сообщение об успешной регистрации"/>
             )}
             {toolTipImage === 'error' && 
-            <img className="popup__image-auth" src={errorIcon} />
+            <img className="popup__image-auth" src={errorIcon} alt="Сообщение об ошибке" />
             }
        
         </div>
