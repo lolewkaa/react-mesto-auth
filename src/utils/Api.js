@@ -106,9 +106,9 @@ changeAvatar(data) {
 }
 
 const apiConfig = {
-  baseUrl: "http://api.mesto.backend.nomoredomains.xyz",
+  baseUrl: "baseUrl: 'http://localhost:3000/'",
   headers: {
-    authorization: "51cc9dc9-38a6-4ea6-94cb-92255188bdc1",
+    // authorization: "51cc9dc9-38a6-4ea6-94cb-92255188bdc1",
     "Content-Type": "application/json",
   },
 };
