@@ -37,6 +37,7 @@ export const authorization = (password, email) => {
         "Content-Type": "application/json",
         "Authorization" : `Bearer ${token}`
     
-  }
+  },
+  credentials: 'include',
 }).then((res) => chekResult(res))
   }
