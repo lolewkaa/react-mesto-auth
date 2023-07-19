@@ -1,5 +1,4 @@
-export const BASE_URL = 'http://localhost:3000/';
-// export const BASE_URL = 'http://api.mesto.backend.nomoredomains.xyz';
+export const BASE_URL = 'http://api.mesto.backend.nomoredomains.xyz';
 
 function chekResult(res) {
     if (res.ok) {
@@ -37,7 +36,6 @@ export const authorization = (password, email) => {
         "Content-Type": "application/json",
         "Authorization" : `Bearer ${token}`
     
-  },
-  credentials: 'include',
+  }
 }).then((res) => chekResult(res))
   }
