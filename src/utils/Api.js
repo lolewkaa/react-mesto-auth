@@ -106,7 +106,7 @@ changeAvatar(data) {
 }
 
 const apiConfig = {
-  baseUrl: "https://mesto.nomoreparties.co/v1/cohort-64",
+  baseUrl: "http://api.mesto.backend.nomoredomains.xyz",
   headers: {
     authorization: "51cc9dc9-38a6-4ea6-94cb-92255188bdc1",
     "Content-Type": "application/json",
